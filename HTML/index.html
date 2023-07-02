@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Armando Sandi Freelancer</title>
+    <link rel="preload" href="/CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/CSS/styles.css" as="style">
+    <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 <body>
     <header>
-        <h1>Armando Sandi Desarrollador Web</h1>
+        <h1 class="titulo">Armando Sandi  <span>Desarrollador Web</span> </h1>
     </header>
-    <nav>
-        <a>Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a>Clientes</a>
-        <a>Contactos</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a>Inicio</a>
+            <a href="HTML/nosotros.html">Nosotros</a>
+            <a>Clientes</a>
+            <a>Contactos</a>
+        </nav>
+    </div>
     <section>
-        <h2>Diseño y Desarrollo Web Freelancer</h2>
+        <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
@@ -66,6 +75,30 @@
         </section>
         <section>
             <h2>Contacto</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Contactame llenando todos los campos</legend>
+                    <div>
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                    </div>
+                    <div>
+                    <label for="">Telefono</label>
+                    <input type="tel" placeholder="Nombre">
+                    </div>
+                    <div>
+                    <label for="">Correo</label>
+                    <input type="email" placeholder="Correo">
+                    </div>
+                    <div>
+                    <label for="">Mensaje</label>
+                    <textarea></textarea>
+                    </div>
+                    <div>
+                    <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
         </section>
         
     </main>
